@@ -14,11 +14,11 @@ use pocketmine\Player;
 
 class Main extends PluginBase implements Listener{
 
-   public function onEnable()
-   {
+   public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-    
-        $level = $this->getServer->getDefaultLevel();
+        $this->onLevel($this->getServer()->getDefaultLevel());
+   } 
+   public function onLevel(Level $level){
         $pos = new Vector3(127, 43, 128);
         $pos1 = new Vector3(127, 44, 133);
         $pos2 = new Vector3(122, 44, 128);
