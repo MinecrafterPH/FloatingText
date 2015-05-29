@@ -1,0 +1,19 @@
+# FloatingText by MinecrafterPH
+
+# Notes:
+# Positions are seperated by a comma. (e.g. x, y, z)
+# Text should be placed inside the double apostrophe.
+
+# Positions
+pos1: x, y, z
+pos2: x, y, z
+pos3: x, y, z
+pos4: x, y, z
+pos5: x, y, z
+
+# Text
+text1: "text"
+text2: ""
+text3: ""
+text4: ""
+text5: ""
