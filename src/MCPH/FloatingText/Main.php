@@ -1,6 +1,6 @@
 <?php
 
-namespace HypeX\FloatingText;
+namespace MCPH\FloatingText;
 
 use pocketmine\Server;
 use pocketmine\Player;
@@ -47,9 +47,6 @@ class Main extends PluginBase implements Listener{
 	return $color;
    }
 */   
-   public function onLoad(){
-        $this->getLogger()->info(TextFormat::GREEN. "FloatingText has been enabled.");  
-   }
    public function saveFiles(){
 	if(!file_exists($this->getDataFolder())){
 		mkdir($this->getDataFolder());
@@ -58,6 +55,7 @@ class Main extends PluginBase implements Listener{
    public function onEnable(){
         $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
+        $this->getLogger()->info(TextFormat::GREEN. "FloatingText has been enabled.");
         @mkdir($this->getDataFolder());
         $this->cfg = $this->getConfig();
    }
