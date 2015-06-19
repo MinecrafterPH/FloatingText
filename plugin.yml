@@ -1,6 +1,6 @@
 name: FloatingText
 description: Shows floating text in a world.
-main: HypeX\FloatingText\Main
+main: MCPH\FloatingText\Main
 version: 1.0
 author: MinecrafterPH
 api: 1.0.0
