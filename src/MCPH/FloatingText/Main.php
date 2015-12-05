@@ -28,9 +28,9 @@ class Main extends PluginBase implements Listener{
    public function onEnable(){
         $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->getLogger()->info(TextFormat::GREEN. "FloatingText has been enabled.");
+        $this->getLogger()->info(TextFormat::YELLOW . "[" . TextFormat::GOLD . "FloatingText" . TextFormat::YELLOW. "] " . TextFormat::GREEN . "Plugin has been enabled!");
+	$this->getLogger()->info(TextFormat::YELLOW . "[" . TextFormat::GOLD . "FloatingText" . TextFormat::YELLOW. "] " . TextFormat::GREEN . "Created by " . TextFormat::WHITE . "MinecrafterPH");
         @mkdir($this->getDataFolder());
-        $this->cfg = $this->getConfig();
    }
    public function onDisable(){
 	unset($this->players);
